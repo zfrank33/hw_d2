@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+// Write an object prototype for a Person that has a name and age, has a
+// printInfo method, and also has a method that 
+// increments the persons age by 1 each time the method is called.
+// Create two people using the 'new' keyword, and print 
+// both of their infos and increment one persons
+// age by 3 years. Use an arrow function for both methods
+// */
+
+// Create our Person Prototype
+
+
+// Use an arrow to create the printInfo method
+
+// Create another arrow function for the addAge method that takes a single parameter
+// Adding to the age 
+
+function Person () {
+this.name= "John Doe";
+this.age= 0;
+this.printInfo = ()=>{
+    console.log(this.name);
+    console.log(this.age); 
+};
+this.ageInc =()=>{
+this.age=this.age+1
+return -1;
+};
+this.addAge = (x)=>{
+  this.age=this.age+x
+return -1;
+}  
+}
+   const person1 =new Person()
+   const person2=new Person()
+   const person3 =new Person()  
+   person1.printInfo()
+   person2.printInfo()
+   person3.printInfo()
+   person2.ageInc()
+   person2.ageInc()
+   person2.ageInc()
+person3.addAge(5)
+person1.printInfo()
+   person2.printInfo()
+   person3.printInfo()
+    </script>
+  </body>
+</html>
